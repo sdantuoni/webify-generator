@@ -1,0 +1,7 @@
+{
+    "name": "dantuonis/php",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "rmccue/requests": "^1.7"
+    }
+}

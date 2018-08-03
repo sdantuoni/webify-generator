@@ -1,0 +1,31 @@
+{
+  "name": "webify-generator",
+  "version": "1.0.4",
+  "description": "A web application generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "webify-generator": "./bin/webify-generator.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "gulp",
+    "generator",
+    "coffee",
+    "typescript"
+  ],
+  "author": "Santiago D´Antuoni",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.3.1",
+    "copy": "^0.3.2",
+    "cross-spawn": "^6.0.5",
+    "edit-json-file": "^1.1.0",
+    "inquirer": "^6.0.0",
+    "ncp": "^2.0.0",
+    "prompt": "^1.0.0",
+    "prompt-choices": "^5.0.0"
+  }
+}

@@ -1,0 +1,50 @@
+// PALLETE
+$purple: #660099;
+$gray: #666666;
+$white: #fff;
+$gray-light: #999999;
+$gray-dark: #333333;
+$gray-medium: #e3e3e3;
+$orange: #ff9900;
+$purple-dark: #4d0074;
+
+// TYPOGRAPHY
+
+$roboto: 'Roboto', sans-serif;
+
+$officina-r: 'ITCOfficinaSerifBookRegular';
+$officina-b: 'ITCOfficinaSerifBold';
+
+$font-size-base: 16px;
+
+$navbar-color: $gray;
+$navbar-color-active: $purple;
+$title-color: $purple;
+$text-color: $gray-dark;
+
+// BUTTONS
+
+$btn-default-bg: $purple;
+$btn-default-color: $white;
+$btn-orange-bg: orange;
+$btn-orange-color: $white;
+$btn-white-bg: $white;
+$btn-white-color: $gray;
+$btn-gray-color: #d3d3d3;
+$btn-default__disable-bg: $white;
+$btn-default__disable-color: #e8e8e8;
+
+// SIZES
+
+$wrapper-padding-lr: 25px;
+$desktop-wrapper-w: 1146px + ($wrapper-padding-lr * 2);
+$tablet-wrapper-w: 743px + ($wrapper-padding-lr * 2);
+
+$main-header-h: 54px;
+
+// SIMULATOR
+
+$simulator-border-bottom: #e4e4e4;
+$simulator-choose: #e8e8e8;
+$simulator-choose-active: $purple;
+$simulator-choose-active-hover: lighten($purple, 10%);
