@@ -1,6 +1,4 @@
-# Dillinger
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+# Webify Generator
 
 Webify Generator is a generator that allows you to instantly create projects based on various languages and technologies.
 
