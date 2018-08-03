@@ -1,6 +1,6 @@
 {
   "name": "webify-generator",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A web application generator",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,10 @@
     "coffee",
     "typescript"
   ],
+  "repository" :{ 
+    "type" : "git",
+     "url" : "https://github.com/sdantuoni/webify-generator"
+  },
   "author": "Santiago D´Antuoni",
   "license": "MIT",
   "dependencies": {
