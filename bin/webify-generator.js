@@ -53,7 +53,7 @@ inquirer
         type: 'list',
         name: 'frontend',
         message: "What's language do you preffer to use",
-        choices: ['coffee', 'typescript', 'react']
+        choices: ['coffee']
       },
     //   {
     //     type: 'list',
