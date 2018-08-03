@@ -18,24 +18,24 @@ inquirer
     {
         type: 'input',
         name: 'dir',
-        message: 'Select any name for your project',
+        message: 'Select any name for your project:',
         default: 'new-webapp'
     },
     {
         type: 'input',
         name: 'name',
-        message: "What's your name",
+        message: "What's your name:",
         default: "anonymus"
       },
       {
         type: 'input',
         name: 'email',
-        message: "What's your email"
+        message: "What's your email:"
       },
       {
         type: 'input',
         name: 'version',
-        message: "Insert a version of your app",
+        message: "Insert a version of your app:",
         default: "1.0.0"
       },
       {
@@ -47,7 +47,7 @@ inquirer
       {
         type: 'input',
         name: 'description',
-        message: "Write a short description of your application"
+        message: "Write a short description of your application:"
       },
       {
         type: 'list',
