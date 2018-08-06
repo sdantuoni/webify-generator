@@ -1,0 +1,8 @@
+@mixin em($pixels, $context) {
+	font-size: $pixels;
+	font-size: em($pixels, $context);
+}
+
+@function em($pixels, $context) {
+  @return #{$pixels/$context}em;
+}

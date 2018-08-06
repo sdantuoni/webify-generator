@@ -1,0 +1,88 @@
+.Title {
+	color: $title-color;
+	font-weight: 100;
+	line-height: 1.25em;
+	@include em(32px, $font-size-base);
+	font-family: $officina-b;
+
+	&.Title--mob { display: none; }
+
+	@include media(640px) {
+		@include em(26px, $font-size-base);
+
+		&.Title--desk { display: none; }
+		&.Title--mob { display: block; }
+	}
+}
+
+.Title--large {
+	@include em(42px, $font-size-base);
+	text-align: center;
+
+	@include media(640px) {
+		@include em(28px, $font-size-base);
+	}
+}
+
+.Title--smaller {
+	@include em(20px, $font-size-base);
+
+	@include media(640px) {
+		@include em(18px, $font-size-base);
+	}
+}
+
+.Title--gray {
+	color: $gray;
+	font-family: $officina-r;
+	@include em(28px, $font-size-base);
+
+	@include media(640px) {
+		@include em(24px, $font-size-base);
+	}
+}
+
+.Title--lineThrough {
+	position: relative;
+
+	&:before {
+		width: 100%;
+
+		position: absolute;
+		left: 0;
+		top: 50%;
+
+		content: ' ';
+		border-bottom: 1px solid #cccccc;
+	}
+
+	> span {
+		position: relative;
+		display: inline-block;
+		padding: 0 15px;
+		text-align: center;
+		background-color: #fff;
+
+		z-index: 1;
+	}
+}
+
+.Text {
+	color: $gray;
+	line-height: 1.25em;
+	@include em(16px, $font-size-base);
+	font-family: $officina-r;
+
+	&.Text--mob { display: none; }
+
+	@include media(640px) {
+		@include em(18px, $font-size-base);
+		&.Text--desk { display: none; }
+		&.Text--mob { display: block; }
+	}
+}
+
+.TextBold {
+	@extend .Text;
+	font-family: $officina-b;
+}

@@ -1,0 +1,123 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $roboto;
+	font-size: $font-size-base;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+}
+
+
+a {
+	&:visited,
+	&:active,
+	&:link {
+		color: $purple;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: lighten($purple, 15%);
+		text-decoration: underline;
+	}
+
+	outline:none;
+}
+
+video {
+	background-color: #fff;
+}
+
+// GENERAL ELEMENTS
+
+.section {
+	@include clearfix;
+
+	position: relative;
+
+	&.MainHeader {
+
+		&:before {
+			width: 100%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+
+			background-color: #e3e3e3;
+		}
+	}
+}
+
+.wrapper {
+	@include clearfix;
+
+	width: 100%;
+	max-width: $desktop-wrapper-w;
+	padding: 0 $wrapper-padding-lr;
+	margin: 0 auto;
+	position: relative;
+}
+
+// UTILITIES
+
+.u-Clearfix {
+	@include clearfix;
+}
+
+.u-Bold {
+	font-family: $officina-b;
+	font-weight: 100;
+}
+
+.u-fixedTop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.u-TableVCenter {
+	display: table;
+
+	> * {
+		vertical-align: middle;
+		display: table-cell;
+	}
+}
+
+.hidden { visibility: hidden; }
+
+.hide { display: none; }
+
+// LOGOS
+
+.Vivo4GLogo {
+	display: block;
+	width: 147px;
+	height: 30px;
+	background-image: url("../images/vivo-4g-logo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.hidden-mobile
+{
+	@include media(767px)
+	{
+		display: none;
+	}
+}
+
+.show-mobile
+{
+	display: none;
+
+	@include media(767px)
+	{
+		display: block;
+	}
+}

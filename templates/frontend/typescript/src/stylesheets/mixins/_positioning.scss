@@ -1,0 +1,48 @@
+@mixin table-v-center {
+	display: table;
+
+	> * {
+		vertical-align: middle;
+		display: table-cell;
+	}
+}
+
+@mixin fixed-top($z-index) {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: $z-index;
+}
+
+@mixin abs-v-center($horizontal, $vertical) {
+	position: absolute;
+	z-index: 1;
+
+	@if $horizontal == true {
+		left: 50%;
+	}
+	@else {
+		left: initial;
+	}
+
+	@if $vertical == true{
+		top: 50%;
+	}
+	@else {
+		top: initial;
+	}
+
+	@if $horizontal == true and $vertical == true {
+		transform: translate(-50%, -50%);
+	}
+	@else if $horizontal == true and $vertical == false {
+		transform: translate(-50%, 0);
+	}
+	@else if $horizontal == false and $vertical == true {
+		transform: translate(0, -50%);
+	}
+	@else {
+		transform: translate(0, 0);
+	}
+}

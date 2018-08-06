@@ -53,7 +53,7 @@ inquirer
         type: 'list',
         name: 'frontend',
         message: "What's language do you preffer to use",
-        choices: ['coffee']
+        choices: ['coffee', 'typescript', 'react']
       },
     //   {
     //     type: 'list',
@@ -110,6 +110,24 @@ inquirer
             done(answers, settings);
        });
   }
+
+  function runReact(answers, settings) {
+    ncp(path.join(appDir, `../templates/frontend/react/`), path.join(process.cwd(), answers.dir), function (err) {
+      if (err) {
+        return console.error(err);
+      }
+          done(answers, settings);
+     });
+}
+
+function runTypescript(answers, settings) {
+  ncp(path.join(appDir, `../templates/frontend/typescript/`), path.join(process.cwd(), answers.dir), function (err) {
+    if (err) {
+      return console.error(err);
+    }
+        done(answers, settings);
+   });
+}
 
 
   function done(answers, settings) { 
